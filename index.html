@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café Grenada — Kélibia, Tunisie</title>
+<meta name="description" content="Café Grenada, Rue de Maroc à Kélibia. Prenez le temps d'un café.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#carte">Aller à la carte</a>
+
+<header class="nav" id="top">
+  <a class="wordmark" href="#top">Café <em>Grenada</em></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="menu-nav"><span>Menu</span></button>
+  <nav id="menu-nav" aria-label="Navigation principale">
+    <a href="#maison">La Maison</a>
+    <a href="#carte">La Carte</a>
+    <a href="#atmosphere">L'Atmosphère</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-text">
+    <p class="label">Kélibia · Tunisie</p>
+    <h1>Le plaisir de prendre son temps.</h1>
+    <p class="lead">Une tasse entre les mains, une chaise, quelques minutes qui n'appartiennent qu'à vous. Ici, la pause fait partie de la journée.</p>
+    <p class="hero-links"><a class="btn" href="#carte">Voir la carte</a><a class="textlink" href="#contact">Nous trouver</a></p>
+  </div>
+  <figure class="hero-photo">
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=2200&q=88" width="1100" height="1300" alt="Une tasse de café posée sur une table, vue de dessus, dans une lumière chaude" fetchpriority="high" loading="eager" style="object-position:50% 55%">
+  </figure>
+</section>
+
+<section class="intro reveal" id="maison">
+  <p class="label">La Maison</p>
+  <p class="intro-text">Un café, une conversation, quelques minutes de calme. Les petits moments méritent qu'on leur fasse une place.</p>
+</section>
+
+<section class="menu" id="carte">
+  <div class="menu-head">
+    <div>
+      <p class="label">La Carte</p>
+      <h2>De quoi accompagner la pause.</h2>
+      <p class="demo-note" role="note">Carte de démonstration — produits et prix à confirmer auprès du café.</p>
+    </div>
+    <div class="filters" role="group" aria-label="Filtrer la carte">
+      <button class="chip is-active" data-filter="all" aria-pressed="true">Tous</button>
+      <button class="chip" data-filter="cafes" aria-pressed="false">Cafés</button>
+      <button class="chip" data-filter="fraiches" aria-pressed="false">Boissons fraîches</button>
+      <button class="chip" data-filter="douceurs" aria-pressed="false">Douceurs</button>
+    </div>
+  </div>
+
+  <div class="menu-body">
+    <!-- DONNÉES FICTIVES / FICTIONAL DEMO CONTENT: items and prices below are invented
+         for design purposes and are NOT verified by Café Grenada. Edit the text and the
+         .price spans directly to replace them with confirmed values. -->
+    <div class="menu-lists">
+      <section class="cat" data-cat="cafes" aria-labelledby="c1">
+        <h3 id="c1">Cafés</h3>
+        <ul>
+          <li><div><h4>Espresso</h4><p>Café court aux arômes intenses.</p></div><span class="price">3.000 TND</span></li>
+          <li><div><h4>Double Espresso</h4><p>Un café plus intense et généreux.</p></div><span class="price">4.500 TND</span></li>
+          <li><div><h4>Café Direct</h4><p>Un classique simple pour une pause quotidienne.</p></div><span class="price">3.000 TND</span></li>
+          <li><div><h4>Cappuccino</h4><p>Espresso et mousse de lait onctueuse.</p></div><span class="price">5.000 TND</span></li>
+          <li><div><h4>Café Crème</h4><p>Café adouci par une touche de lait.</p></div><span class="price">4.000 TND</span></li>
+          <li><div><h4>Café Latte</h4><p>Espresso et lait chaud à la texture veloutée.</p></div><span class="price">5.500 TND</span></li>
+        </ul>
+      </section>
+      <section class="cat" data-cat="fraiches" aria-labelledby="c2">
+        <h3 id="c2">Boissons fraîches</h3>
+        <ul>
+          <li><div><h4>Café Glacé</h4><p>Une interprétation fraîche du café classique.</p></div><span class="price">6.000 TND</span></li>
+          <li><div><h4>Chocolat Glacé</h4><p>Une boisson chocolatée servie bien fraîche.</p></div><span class="price">6.500 TND</span></li>
+          <li><div><h4>Citronnade</h4><p>Une boisson citronnée et rafraîchissante.</p></div><span class="price">5.000 TND</span></li>
+          <li><div><h4>Jus du Jour</h4><p>Une suggestion fruitée selon disponibilité.</p></div><span class="price">6.000 TND</span></li>
+        </ul>
+      </section>
+      <section class="cat" data-cat="douceurs" aria-labelledby="c3">
+        <h3 id="c3">Douceurs</h3>
+        <ul>
+          <li><div><h4>Croissant</h4><p>Une viennoiserie classique.</p></div><span class="price">2.500 TND</span></li>
+          <li><div><h4>Pain au Chocolat</h4><p>Une viennoiserie au chocolat.</p></div><span class="price">3.000 TND</span></li>
+          <li><div><h4>Cookie</h4><p>Une douceur à accompagner d'un café.</p></div><span class="price">3.500 TND</span></li>
+          <li><div><h4>Part de Gâteau</h4><p>Une part gourmande selon la sélection.</p></div><span class="price">5.500 TND</span></li>
+        </ul>
+      </section>
+    </div>
+    <figure class="menu-photo">
+      <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1300&q=85" width="650" height="850" loading="lazy" alt="Pâtisserie dorée posée sur une assiette" style="object-position:50% 60%">
+      <figcaption>Photographie d'illustration.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="atmo" id="atmosphere">
+  <figure class="atmo-main reveal">
+    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&fit=crop&w=1600&q=88" width="1600" height="900" loading="lazy" alt="Ambiance de café, tables et lumière douce" style="object-position:50% 50%">
+    <figcaption>Photographie d'illustration, non issue du café.</figcaption>
+  </figure>
+  <div class="atmo-text reveal">
+    <p class="label">L'Atmosphère</p>
+    <h2>Un endroit pour ralentir.</h2>
+    <p>Une lumière douce, le bruit léger des tasses, une conversation qui s'étire. On vient pour un café, on reste un peu plus longtemps.</p>
+  </div>
+  <figure class="atmo-side reveal">
+    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1000&q=85" width="500" height="700" loading="lazy" alt="Détail d'un café dans une tasse" style="object-position:50% 50%">
+  </figure>
+</section>
+
+<section class="gallery" aria-label="Galerie">
+  <figure class="g1 reveal"><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=88" width="1200" height="1200" loading="lazy" alt="Gros plan sur un café et sa mousse" style="object-position:50% 50%"></figure>
+  <figure class="g2 reveal"><img src="https://images.unsplash.com/photo-1498804103079-a6351b050096?auto=format&fit=crop&w=1200&q=88" width="800" height="1000" loading="lazy" alt="Préparation d'un café au comptoir" style="object-position:50% 40%"></figure>
+  <figure class="g3 reveal"><img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=1000&q=85" width="900" height="600" loading="lazy" alt="Tasse de café vue de près" style="object-position:50% 70%"></figure>
+  
+  <figure class="g4 reveal"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1300&q=85" width="1300" height="560" loading="lazy" alt="Détail d'une pâtisserie" style="object-position:50% 60%"></figure>
+</section>
+
+<section class="contact" id="contact">
+  <div class="contact-in">
+    <div class="contact-text reveal">
+    <p class="label">Contact</p>
+    <h2>Venez prendre un café.</h2>
+    <address>
+      <strong>Café Grenada</strong><br>
+      Rue de Maroc, Kélibia, Tunisie<br>
+      <a href="tel:+21621986257">+216 21 986 257</a>
+    </address>
+    <p class="hero-links">
+      <a class="btn btn-light" href="tel:+21621986257">Nous contacter</a>
+      <a class="textlink" href="https://maps.app.goo.gl/89fz8ZQMQSn61pgi9" target="_blank" rel="noopener">Voir sur Google Maps</a>
+    </p>
+  </div>
+    <div class="map reveal">
+      <iframe title="Carte : Café Grenada, Rue de Maroc, Kélibia" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3193.0735024326036!2d11.09471951126954!3d36.84071567211975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x131d3300a6c59ba3%3A0x97b44a746d994d73!2sCaf%C3%A9%20Grenada!5e0!3m2!1sen!2stn!4v1791985948934!5m2!1sen!2stn" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p><strong>Café Grenada</strong> · Rue de Maroc, Kélibia · <a href="tel:+21621986257">+216 21 986 257</a></p>
+  <p>© <span id="year">2026</span> Café Grenada. Maquette de démonstration.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
